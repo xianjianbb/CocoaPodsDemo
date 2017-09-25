@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41BB26ED442F4F9B4205E808 /* libPods-CocoaPodsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F144F4643CBF67381662F0E /* libPods-CocoaPodsDemo.a */; };
+		9A3F366E1F58609100682BE5 /* testScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F366D1F58609100682BE5 /* testScrollView.m */; };
 		9AABB8E61E9A1E7B0049435C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABB8E51E9A1E7B0049435C /* main.m */; };
 		9AABB8E91E9A1E7B0049435C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABB8E81E9A1E7B0049435C /* AppDelegate.m */; };
 		9AABB8EC1E9A1E7B0049435C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABB8EB1E9A1E7B0049435C /* ViewController.m */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		7F144F4643CBF67381662F0E /* libPods-CocoaPodsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3F366C1F58609100682BE5 /* testScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testScrollView.h; sourceTree = "<group>"; };
+		9A3F366D1F58609100682BE5 /* testScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testScrollView.m; sourceTree = "<group>"; };
 		9AABB8E11E9A1E7B0049435C /* CocoaPodsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AABB8E51E9A1E7B0049435C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AABB8E71E9A1E7B0049435C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				9AABB8E81E9A1E7B0049435C /* AppDelegate.m */,
 				9AABB8EA1E9A1E7B0049435C /* ViewController.h */,
 				9AABB8EB1E9A1E7B0049435C /* ViewController.m */,
+				9A3F366C1F58609100682BE5 /* testScrollView.h */,
+				9A3F366D1F58609100682BE5 /* testScrollView.m */,
 				9AABB8ED1E9A1E7B0049435C /* Main.storyboard */,
 				9AABB8F01E9A1E7B0049435C /* Assets.xcassets */,
 				9AABB8F21E9A1E7B0049435C /* LaunchScreen.storyboard */,
@@ -186,7 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E40DCCBBF3417EB1CB2A8566 /* [CP] Embed Pods Frameworks */ = {
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AABB8EC1E9A1E7B0049435C /* ViewController.m in Sources */,
+				9A3F366E1F58609100682BE5 /* testScrollView.m in Sources */,
 				9AABB8E91E9A1E7B0049435C /* AppDelegate.m in Sources */,
 				9AABB8E61E9A1E7B0049435C /* main.m in Sources */,
 			);
